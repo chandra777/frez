@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+</body>
+<h1  style="background-color:#33ff33;padding:10px;margin:auto;">FREZ -LOGIN</h1>
+<img src="farmers.png" style="height:330px width:640px"><img>
+<style>
+form
+{
+margin:auto 80px;
+width:300px;
+height:300px;
+display:inline-block;
+}
+input[type=text]
+{
+margin:30px 4px;
+text-align:center;
+width:auto;
+height:30px;
+}
+input[type=password]
+{
+margin:-10px 4px;
+text-align:center;
+width:auto;
+height:30px;
+}
+input[type=submit]
+{
+margin:0px 120px;
+text-align:center;
+width:auto;
+height:30px;
+}
+input[type=submit]:hover
+{
+cursor:pointer;
+border-bottom-color:#33ff33
+height:100px;
+width:80px;
+background-color:#33ff33;
+color:black;
+font-size:20px;
+}
+input:invalid
+{
+box-shadow:2px 2px 5px 4px red;
+}
+input:focus:valid
+{
+box-shadow:2px 2px 2px 2px green;
+outline:green solid thick;
+}
+</style>
+<form action="login.php" method="POST">
+Username:<input type="text" name ="username" placeholder="username" pattern="[a-zA-Z]+"></input><br><br>
+Password:
+<input type="password" name="password" placeholder="password" pattern="[a-zA-z0-9]+"></input><br><br><br>
+<input type="submit" value="login" name="submit"></input>
+</form>
+<div></div>
+</body>
+</html>
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<style>
+header
+{
+text-align:center;
+background-color:#ff6666;
+margin:0px;
+color:black;
+padding:5px;
+}
+form
+{
+margin:100px 450px;
+text-align:center;
+display:block;
+}
+input[type=text]
+{
+width:200px;
+height:30px;
+text-align:center;
+border:1px solid black;
+}
+input[type=email]
+{
+width:200px;
+height:30px;
+text-align:center;
+border:1px solid black;
+}
+input:invalid
+{
+box-shadow:2px 2px 5px 4px red;
+}
+input:focus:valid
+{
+box-shadow:2px 2px 2px 2px green;
+outline:green solid thick
+}
+button:hover
+{
+background-color:#ff6666;
+color:black;
+border:2px solid black;
+border-radius:4px;
+font-size:20px;
+}
+input[type=password]
+{
+width:200px;
+height:30px;
+text-align:center;
+border:1px solid black;}
+
+</style>
+<header>
+<body>
+<p style="font-size:30px;font-family:verdana">Customer Sign up page</p></header>
+<form  action="sigupcustomer.php" method="post">
+Firstname:
+<input type="text" name="firstname" placeholder="Firstname" pattern="[a-zA-z]+" ></input><br><br>
+Lastname:
+<input type="text" name="lastname"  placeholder="Lastname" pattern="[a-zA-Z]+"></input><br><br>
+Email-id:
+<input type="email" name="email"    placeholder="Email_id" pattern="[A-Za-z0-9]+@[a-z]+\.[a-z]{3}$"></input><br><br>
+Username:
+<input type="text" name="username" placeholder="Username" pattern="[a-zA-z0-9]+"></input><br><br> 	
+Password:
+<input type="password" name="psw" placeholder="password" ></input><br><br>
+Address  :
+<input type="text" name="address"   placeholder="Address"></input><br><br>
+Phone_no:
+<input type="text" name="phone_no"  placeholder="Phone_no" pattern="\d+"></input><br><br>
+Years_of_exp:
+<input type="text" name="yop" placeholder="years_of_experience"></input><br><br>
+
+<input type="submit" value="signup" style="padding:10px"></input><br><br>
+</form>
+</body>
+</html>
